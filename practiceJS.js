@@ -74,3 +74,18 @@ function countSheeps (arrayOfSheep) {
 var array1 = [true, true, true, false, true, true, true, true, true, false, true, false, true, false, false, true, true, true, true, true, false, false, true, true];
 
 console.log(countSheeps(array1));// "There are 17 sheeps in total"
+
+function findNeedle (hayStack) {
+  // your code here
+  var count = -1;
+  for (var i = 0; i < hayStack.length; i++) {
+    count++;
+    if (hayStack[i] === 'needle') {
+      return 'found the needle at position ' + count.toString();
+    }
+  }
+}
+
+var hayStack1 = ['3', '123124234', undefined, 'needle', 'world', 'hay', 2, '3', true, false];
+
+console.log(findNeedle(hayStack1));// 'found the needle at position 3'
