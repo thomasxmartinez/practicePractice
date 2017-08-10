@@ -32,3 +32,17 @@ function opposite (number) {
 }
 
 console.log(opposite(44));
+
+function sumArray (array) {
+  function sortArray (a, b) {
+    return a - b;
+  }
+  array = array.sort(sortArray);
+  var newSum = 0;
+  for (var i = 1; i < array.length - 1; i++) {
+    newSum += array[i];
+  }
+  return newSum;
+}
+
+console.log(sumArray([ 6, 2, 1, 8, 10 ]));// 16
