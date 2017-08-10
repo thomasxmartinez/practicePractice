@@ -7,3 +7,12 @@ function formatMoney (amount) {
 }
 
 console.log(formatMoney(39.996));
+
+function evenOrOdd (number) {
+  if (number % 2 === 0) {
+    return 'Even';
+  }
+  return 'Odd';
+}
+
+console.log(evenOrOdd(2));
