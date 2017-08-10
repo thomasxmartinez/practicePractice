@@ -16,3 +16,19 @@ function evenOrOdd (number) {
 }
 
 console.log(evenOrOdd(2));
+
+function repeatStr (n, s) {
+  var newString = '';
+  for (var i = 0; i < n; i++) {
+    newString += s;
+  }
+  return newString;
+}
+
+console.log(repeatStr(3, 'zoom'));
+
+function opposite (number) {
+  return number * -1;
+}
+
+console.log(opposite(44));
