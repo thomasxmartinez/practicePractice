@@ -46,3 +46,31 @@ function sumArray (array) {
 }
 
 console.log(sumArray([ 6, 2, 1, 8, 10 ]));// 16
+
+function digitize (n) {
+  var numsArray = [];
+  n = n.toString().split('').reverse();
+  for (var i = 0; i < n.length; i++) {
+    numsArray.push(Number(n[i]));
+  }
+  return numsArray;
+}
+
+console.log(digitize(35231));// [1,3,2,5,3]);
+
+function countSheeps (arrayOfSheep) {
+  var sheepCount = 0;
+  if (arrayOfSheep === undefined || arrayOfSheep === null) {
+    return 0;
+  }
+  for (var i = 0; i < arrayOfSheep.length; i++) {
+    if (arrayOfSheep[i] === true) {
+      sheepCount += 1;
+    }
+  }
+  return sheepCount;
+}
+
+var array1 = [true, true, true, false, true, true, true, true, true, false, true, false, true, false, false, true, true, true, true, true, false, false, true, true];
+
+console.log(countSheeps(array1));// "There are 17 sheeps in total"
