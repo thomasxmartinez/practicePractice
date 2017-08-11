@@ -89,3 +89,16 @@ function findNeedle (hayStack) {
 var hayStack1 = ['3', '123124234', undefined, 'needle', 'world', 'hay', 2, '3', true, false];
 
 console.log(findNeedle(hayStack1));// 'found the needle at position 3'
+
+function number (busStops) {
+  // Good Luck!
+  var passengers = 0;
+  var drops = 0;
+  for (var i = 0; i < busStops.length; i++) {
+    passengers += busStops[i][0];
+    drops += busStops[i][1];
+  }
+  return passengers - drops;
+}
+
+console.log(number([[10, 0], [3, 5], [5, 8]]));// 5
