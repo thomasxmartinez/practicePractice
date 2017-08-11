@@ -102,3 +102,31 @@ function number (busStops) {
 }
 
 console.log(number([[10, 0], [3, 5], [5, 8]]));// 5
+
+function basicOp (operation, value1, value2) {
+  if (operation === '+') {
+    return value1 + value2;
+  }
+  if (operation === '-') {
+    return value1 - value2;
+  }
+  if (operation === '*') {
+    return value1 * value2;
+  }
+  if (operation === '/') {
+    return value1 / value2;
+  }
+}
+
+console.log(basicOp('+', 4, 7));// 11
+
+function doubleChar (str) {
+  // Your code here
+  var newString = '';
+  for (var i = 0; i < str.length; i++) {
+    newString += str[i] + str[i];
+  }
+  return newString;
+}
+
+console.log(doubleChar('illuminati'));// "iilllluummiinnaattii")
